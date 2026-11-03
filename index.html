@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- Favicons & App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <meta name="theme-color" content="#0B2546"/>
+  <title>ArogyaTrust | Human Care Over Algorithms</title>
+<!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Inter & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Play CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration matching the requested Executive Warm Healthcare theme -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0B2546",
+            "primary-container": "#133E6E",
+            "on-primary": "#ffffff",
+            "secondary": "#006A61",
+            "secondary-container": "#E6F7F5",
+            "on-secondary-container": "#004D47",
+            "tertiary": "#C85A32",
+            "tertiary-container": "#FFF3ED",
+            "surface": "#FFFFFF",
+            "surface-dim": "#F4F7FB",
+            "surface-container": "#EFF4FA",
+            "surface-container-high": "#E5EDF7",
+            "surface-container-lowest": "#FFFFFF",
+            "background": "#F8FAFC",
+            "on-surface": "#0F172A",
+            "on-surface-variant": "#475569",
+            "outline": "#CBD5E1",
+            "outline-variant": "#E2E8F0",
+            "accent-gold": "#B47814",
+            "accent-gold-light": "#FEF7EA",
+            "accent-teal": "#0D9488",
+            "accent-rose": "#BE185D"
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            headline: ["Plus Jakarta Sans", "sans-serif"],
+            body: ["Inter", "sans-serif"],
+            label: ["Plus Jakarta Sans", "sans-serif"]
+          },
+          boxShadow: {
+            "subtle": "0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05)",
+            "elevated": "0 10px 30px -10px rgba(11, 37, 70, 0.08), 0 4px 6px -2px rgba(11, 37, 70, 0.04)",
+            "premium": "0 20px 40px -15px rgba(11, 37, 70, 0.12), 0 0 0 1px rgba(226, 232, 240, 0.8)",
+            "trust": "0 12px 32px -4px rgba(0, 106, 97, 0.12)"
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased selection:bg-secondary/20 selection:text-primary">
+<!-- TOP REGULATORY & HELPLINE BAR -->
+<div class="bg-primary text-white/80 text-xs py-2 px-6 lg:px-12 border-b border-primary-container">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+<div class="flex items-center gap-4">
+<span class="inline-flex items-center gap-1.5 text-accent-gold-light font-medium">
+<span class="material-symbols-outlined text-sm text-accent-gold" data-icon="favorite">favorite</span>
+          Human Care Over Algorithms
+        </span>
+</div>
+<div class="flex items-center gap-5">
+<span class="text-emerald-400 font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Bedside Advocates On Duty
+        </span>
+</div>
+</div>
+</div>
+<!-- MAIN EXECUTIVE NAVBAR -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-outline-variant shadow-subtle">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-11 h-11 rounded-xl overflow-hidden shadow-sm border border-outline-variant transition-transform group-hover:scale-105 bg-primary">
+<img alt="ArogyaTrust Emblem" class="w-full h-full object-cover" src="logo-icon.png"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-extrabold text-2xl tracking-tight text-primary flex items-center">
+            Arogya<span class="text-secondary font-bold">Trust</span>
+</span>
+<span class="text-[10px] font-label tracking-widest text-on-surface-variant uppercase font-bold">
+            Human Care Over Algorithms
+          </span>
+</div>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8 text-[14.5px]">
+<a class="text-primary font-semibold hover:text-secondary transition-colors" href="#plans">
+          Curated Plans
+        </a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="coming-soon.html?feature=hospitals">
+          Hospital Network
+        </a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="#concierge">
+          Bedside Advocates
+        </a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="#stories">
+          Lived Stories
+        </a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="#about">
+          About Us
+        </a>
+</nav>
+<!-- Right Action Controls -->
+<div class="flex items-center gap-3.5">
+<a class="hidden sm:inline-flex items-center gap-2 text-xs font-headline font-semibold text-secondary hover:text-on-secondary-container px-3.5 py-2.5 rounded-lg border border-secondary/30 hover:bg-secondary-container/50 transition-all" href="coming-soon.html?feature=hospitals">
+<span class="material-symbols-outlined text-base" data-icon="local_hospital">local_hospital</span>
+<span>Cashless Desks</span>
+</a>
+<a class="bg-primary hover:bg-primary-container text-white font-headline text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 active:scale-95 flex items-center gap-2" href="#quote-calculator">
+<span>Check Instant Premium</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- HERO SECTION: Warm Human & Authoritative Executive Narrative -->
+<section class="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-white via-surface-dim to-background border-b border-outline-variant">
+<!-- Subtle warm atmospheric gradients -->
+<div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-secondary-container/30 rounded-full blur-3xl pointer-events-none -z-0"></div>
+<div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-surface-container-high/60 rounded-full blur-3xl pointer-events-none -z-0"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+<!-- Left Hero Content (7 Cols) -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Main Editorial Headline -->
+<h1 class="font-display text-4xl sm:text-5xl lg:text-[54px] text-primary tracking-tight leading-[1.15] font-semibold">
+            Healthcare protected with <br class="hidden sm:inline"/>
+<span class="text-secondary italic font-serif">Dignity</span> &amp; True Empathy.
+          </h1>
+<!-- Empathic Subtitle -->
+<p class="text-on-surface-variant font-body text-lg sm:text-xl max-w-2xl leading-relaxed">
+            When health crises strike, your family deserves a dedicated bedside advocate who knows your name — not an automated algorithm or impersonal denial notice. Transparent, comprehensive health protection built for India's families.
+          </p>
+<!-- Interactive Plan Quote Calculator Card -->
+<div class="bg-white p-6 sm:p-7 rounded-2xl shadow-premium border border-outline-variant space-y-4 max-w-xl" id="quote-calculator">
+<div class="flex items-center justify-between text-xs font-headline font-bold text-on-surface-variant pb-1 border-b border-outline-variant">
+<span class="uppercase tracking-wider text-primary">CALCULATE TAILORED FAMILY PREMIUM</span>
+<span class="text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span> 100% Private • No Unsolicited Calls
+              </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+<div>
+<label class="text-[11.5px] font-headline font-bold text-on-surface-variant uppercase block mb-1.5">Who to Protect?</label>
+<select class="w-full bg-surface-dim border border-outline rounded-lg px-3 py-2.5 text-sm text-primary font-medium focus:border-secondary focus:ring-1 focus:ring-secondary">
+<option>Self &amp; Spouse</option>
+<option selected="">Family (Spouse + Children)</option>
+<option>Senior Parents (60+)</option>
+<option>Individual Only</option>
+</select>
+</div>
+<div>
+<label class="text-[11.5px] font-headline font-bold text-on-surface-variant uppercase block mb-1.5">Eldest Member Age</label>
+<select class="w-full bg-surface-dim border border-outline rounded-lg px-3 py-2.5 text-sm text-primary font-medium focus:border-secondary focus:ring-1 focus:ring-secondary">
+<option>18 - 30 years</option>
+<option selected="">31 - 45 years</option>
+<option>46 - 60 years</option>
+<option>60+ years</option>
+</select>
+</div>
+<div class="flex items-end">
+<button class="w-full bg-secondary hover:bg-on-secondary-container text-white font-headline text-sm font-semibold py-2.5 px-4 rounded-lg shadow-sm hover:shadow transition-all duration-200 active:scale-95 flex items-center justify-center gap-1.5" type="button">
+<span>View Rates</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="text-xs text-on-surface-variant flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span>Includes zero room-rent sub-limits, full pre-existing disease coverage, and restore benefits.</span>
+</div>
+</div>
+<!-- Fiduciary & Trust Badges -->
+<div class="pt-2 flex flex-wrap items-center gap-6 text-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-accent-gold-light border border-accent-gold/40 flex items-center justify-center text-accent-gold">
+<span class="material-symbols-outlined fill-icon text-xl" data-icon="workspace_premium">workspace_premium</span>
+</div>
+<div>
+<div class="flex items-center gap-1 text-accent-gold">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="text-primary font-bold text-xs ml-1">4.94 / 5</span>
+</div>
+<p class="text-xs text-on-surface-variant font-medium">Over 2 Million Indian Families Sheltered</p>
+</div>
+</div>
+<div class="h-8 w-px bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-2.5 text-xs text-on-surface-variant">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high border border-outline flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-xl" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<p class="text-primary font-bold leading-tight">98.4% Claims Settled</p>
+<p class="text-[11px] text-on-surface-variant">Average Bedside Pre-Auth: 14 Minutes</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Hero Visual: Authentic Family Photo https://lh3.googleusercontent.com/aida/AEtjO1VVkLZYdqCmXeOiu_pIQLfT-tCME6TpQlx-3zhho-o_voDStJmOqcctTf8LQM2kX41fNnMT5nMyaqmnUAFXFlT3pQ71SKTDgNZl-tjUjuA--3Z5x_D1RJJL925Eg_BzPpMyP-Jxt3mrNJDK3192XqskyLRnQCibvStug_LBMHAV4I_x4EK9Lmdd36YjiF0Egd8qkkTTmizpqEZ7zTIYiZBInK1elz_ArGydqIvdQj85Mib44TJuw44It-4 -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-lg lg:max-w-none">
+<!-- Subtle frame shadow -->
+<div class="rounded-3xl overflow-hidden border border-outline-variant shadow-premium bg-white p-3">
+<div class="relative rounded-2xl overflow-hidden group">
+<img alt="A happy Indian family embracing in their well-lit home" class="w-full h-[460px] object-cover object-center group-hover:scale-102 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1VVkLZYdqCmXeOiu_pIQLfT-tCME6TpQlx-3zhho-o_voDStJmOqcctTf8LQM2kX41fNnMT5nMyaqmnUAFXFlT3pQ71SKTDgNZl-tjUjuA--3Z5x_D1RJJL925Eg_BzPpMyP-Jxt3mrNJDK3192XqskyLRnQCibvStug_LBMHAV4I_x4EK9Lmdd36YjiF0Egd8qkkTTmizpqEZ7zTIYiZBInK1elz_ArGydqIvdQj85Mib44TJuw44It-4"/>
+<!-- Gentle overlay for contrast -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<!-- Floating Live Care Advocate Badge -->
+<div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl flex items-center gap-2 shadow-elevated border border-outline-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-xs font-headline font-bold text-primary">Bedside Advocate Assigned</span>
+</div>
+<!-- Bottom Emotional Guarantee Anchor -->
+<div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-outline-variant shadow-elevated flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined fill-icon text-xl" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs text-primary leading-tight">Every Claim Evaluated by Physicians</h4>
+<p class="text-[11px] text-on-surface-variant mt-0.5">Zero automated claim rejections</p>
+</div>
+</div>
+<span class="text-[11px] font-headline font-bold text-secondary bg-secondary-container px-2.5 py-1 rounded-md border border-secondary/20">
+                    Human-First
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE VALUE PILLARS: Executive, Clean & Reassuring -->
+<section class="py-20 bg-white border-b border-outline-variant" id="concierge">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+<div>
+<span class="text-xs font-headline font-bold text-secondary tracking-widest uppercase block mb-1">
+            THE AROGYATRUST FIDUCIARY PROMISE
+          </span>
+<h2 class="font-display font-semibold text-3xl sm:text-4xl text-primary">
+            Human Care Over Cold Algorithms.
+          </h2>
+<p class="text-on-surface-variant text-base mt-2 max-w-xl font-body">
+            We reject the industry practice of letting automated refusal bots deny critical hospital approvals. You are accompanied by accredited care coordinators from day one.
+          </p>
+</div>
+<div class="flex items-center gap-2.5 text-xs font-headline font-semibold text-primary bg-surface-dim px-4 py-2.5 rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="health_and_safety">health_and_safety</span>
+<span>100% Institutional Doctor Review Before Any Decision</span>
+</div>
+</div>
+<!-- 4 Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pillar 1 -->
+<div class="bg-surface-dim/60 hover:bg-white p-7 rounded-2xl border border-outline-variant hover:border-secondary/40 shadow-subtle hover:shadow-elevated transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-secondary flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="support_agent">support_agent</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">Dedicated Family Concierge</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            One designated relationship manager and licensed nurse who knows your family's complete medical history.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-dim/60 hover:bg-white p-7 rounded-2xl border border-outline-variant hover:border-secondary/40 shadow-subtle hover:shadow-elevated transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="timer">timer</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">15-Min Cashless Clearance</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            Direct coordination with hospital admission desks. Zero paperwork delay when admission matters most.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-dim/60 hover:bg-white p-7 rounded-2xl border border-outline-variant hover:border-secondary/40 shadow-subtle hover:shadow-elevated transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-accent-gold-light text-accent-gold flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">Zero Hidden Sub-Limits</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            No capping on ICU, doctor visits, or room categories. We honor real hospital expenses without surprise deductions.
+          </p>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-dim/60 hover:bg-white p-7 rounded-2xl border border-outline-variant hover:border-secondary/40 shadow-subtle hover:shadow-elevated transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-secondary flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="all_inclusive">all_inclusive</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">Lifelong Guaranteed Renewal</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            Your policy will never be canceled due to claims or age. Lifelong protection with continuous sum restoration.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CURATED HEALTH PLANS: Featuring Authentic Indian Imagery -->
+<section class="py-24 bg-surface-dim border-b border-outline-variant" id="plans">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="text-xs font-headline font-bold text-secondary tracking-widest uppercase block mb-1">
+            TAILORED COVERAGE ARCHITECTURE
+          </span>
+<h2 class="font-display font-semibold text-3xl sm:text-4xl text-primary">
+            Curated Plans for Every Life Chapter.
+          </h2>
+<p class="text-on-surface-variant text-base mt-2 max-w-xl font-body">
+            Crystal-clear coverage terms, direct hospital billing, and real doctor advocacy across all life stages.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-headline text-on-surface-variant uppercase font-semibold">Need advice?</span>
+<a class="text-sm font-headline font-bold text-secondary hover:text-on-secondary-container transition-colors flex items-center gap-1" href="#quote-calculator">
+<span>Speak to a Medical Underwriter</span>
+<span class="material-symbols-outlined text-base" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 3 Core Plan Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+<!-- Card 1: Individual Pro Care (Using https://lh3.googleusercontent.com/aida/AEtjO1XoDHYX4LgKCEGCvEevZu73go5ZZpgW06f29dJZvrxe7V5fbv5s3h7yU9QQAoIK6hXwWapVt9xAL9Wk2INUiRNUYWUKDq6zW7nzlH5tDUIxMhW_2VzPGVSLNj7LQaDJ-jEt_yBHQvxfrty5DzPcDm_VEnRmjB3aPg6NdSNjcnVE3Ng_H2hMNeujo_p5zqc7ELRBbZK6af8zJ_uAGhC_jeTGOkzXT92Qf601a3DvTyUFsNKifTANc5TEB6w) -->
+<div class="bg-white rounded-2xl overflow-hidden border border-outline-variant shadow-elevated hover:shadow-premium transition-all duration-300 flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Young Indian professional smiling near modern corporate office" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XoDHYX4LgKCEGCvEevZu73go5ZZpgW06f29dJZvrxe7V5fbv5s3h7yU9QQAoIK6hXwWapVt9xAL9Wk2INUiRNUYWUKDq6zW7nzlH5tDUIxMhW_2VzPGVSLNj7LQaDJ-jEt_yBHQvxfrty5DzPcDm_VEnRmjB3aPg6NdSNjcnVE3Ng_H2hMNeujo_p5zqc7ELRBbZK6af8zJ_uAGhC_jeTGOkzXT92Qf601a3DvTyUFsNKifTANc5TEB6w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-primary font-headline text-xs font-bold border border-outline-variant">
+              For Young Achievers
+            </span>
+<span class="absolute bottom-3 left-4 text-xs font-headline font-medium text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary-container" data-icon="bolt">bolt</span> Instant Digital Policy
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-headline font-bold text-xl text-primary">Individual Pro Care</h3>
+<span class="text-xs font-headline font-semibold text-secondary px-2.5 py-1 rounded bg-secondary-container">₹10L – ₹1Cr</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Designed for ambitious professionals. Zero room-rent capping, full diagnostic OPD allowances, and seamless cashless care.
+              </p>
+<ul class="mt-5 space-y-2.5 text-xs text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Annual comprehensive executive health checkup</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>540+ Daycare procedures included with 0-hr stay</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Section 80D tax exemption up to ₹25,000/year</span>
+</li>
+</ul>
+</div>
+<div class="pt-5 border-t border-outline-variant flex items-center justify-between">
+<div>
+<span class="text-[11px] text-on-surface-variant uppercase font-headline font-medium">Starts at</span>
+<div class="font-headline font-bold text-2xl text-primary">₹499 <span class="text-xs font-normal text-on-surface-variant">/ month</span></div>
+</div>
+<button class="bg-surface-dim hover:bg-primary hover:text-white text-primary font-headline text-xs font-bold px-4 py-2.5 rounded-lg border border-outline-variant transition-all flex items-center gap-1" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Family Complete Suraksha (Featured - Using https://lh3.googleusercontent.com/aida/AEtjO1VVkLZYdqCmXeOiu_pIQLfT-tCME6TpQlx-3zhho-o_voDStJmOqcctTf8LQM2kX41fNnMT5nMyaqmnUAFXFlT3pQ71SKTDgNZl-tjUjuA--3Z5x_D1RJJL925Eg_BzPpMyP-Jxt3mrNJDK3192XqskyLRnQCibvStug_LBMHAV4I_x4EK9Lmdd36YjiF0Egd8qkkTTmizpqEZ7zTIYiZBInK1elz_ArGydqIvdQj85Mib44TJuw44It-4) -->
+<div class="bg-white rounded-2xl overflow-hidden border-2 border-secondary shadow-premium transition-all duration-300 flex flex-col group relative">
+<!-- Featured Header Ribbon -->
+<div class="bg-secondary text-white text-center font-headline text-xs py-2 font-bold tracking-wider uppercase flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="favorite">favorite</span>
+            MOST TRUSTED BY 1.2M+ INDIAN PARENTS
+          </div>
+<div class="relative h-56 overflow-hidden">
+<img alt="Joyful Indian family hugging warmly in their home" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VVkLZYdqCmXeOiu_pIQLfT-tCME6TpQlx-3zhho-o_voDStJmOqcctTf8LQM2kX41fNnMT5nMyaqmnUAFXFlT3pQ71SKTDgNZl-tjUjuA--3Z5x_D1RJJL925Eg_BzPpMyP-Jxt3mrNJDK3192XqskyLRnQCibvStug_LBMHAV4I_x4EK9Lmdd36YjiF0Egd8qkkTTmizpqEZ7zTIYiZBInK1elz_ArGydqIvdQj85Mib44TJuw44It-4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 bg-white/95 backdrop-blur-md text-primary font-headline text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+              Comprehensive Family Floater
+            </span>
+<span class="absolute bottom-3 left-4 text-xs font-headline font-medium text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary-container" data-icon="verified">verified</span> Zero Deductibles on Children
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-headline font-bold text-xl text-primary">Family Complete Suraksha</h3>
+<span class="text-xs font-headline font-semibold text-secondary px-2.5 py-1 rounded bg-secondary-container">₹25L – ₹2Cr</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Complete security for both partners and up to 4 children. Generous maternity, newborn vaccinations, and pediatric helplines.
+              </p>
+<ul class="mt-5 space-y-2.5 text-xs text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span><strong>100% Reload:</strong> Sum insured restores automatically</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Delivery costs (Normal &amp; C-Section) covered from Day 1</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Personal Pediatrician on call 24 hours a day</span>
+</li>
+</ul>
+</div>
+<div class="pt-5 border-t border-outline-variant flex items-center justify-between">
+<div>
+<span class="text-[11px] text-on-surface-variant uppercase font-headline font-medium">Starts at</span>
+<div class="font-headline font-bold text-2xl text-secondary">₹899 <span class="text-xs font-normal text-on-surface-variant">/ month</span></div>
+</div>
+<button class="bg-secondary hover:bg-on-secondary-container text-white font-headline text-xs font-bold px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition-all flex items-center gap-1.5 active:scale-95" type="button">
+<span>Protect Family</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Senior Citizen Plan (Using https://lh3.googleusercontent.com/aida/AEtjO1WMdILEPFlUwwZaDDmsUQloqNlz3TDRHx6EWbKBVhzz2Wsq8L_bgxCX5YMOkTCPgQGMPTJWQKZAKLvdVul-QHI1OS4LoKe4aSbCISUsNnSXfaDlxvYgxIpLE3TNfymn2qWUv4sjsZYd0RD2Wz-BdXYLGnliD7-0b_cVrOoRH0R4OwCLy4R0_C1GTWcT5UD_WmJ9akPLF7i1z9I3hG0J7I9Auq8SkTE11znu-FWt8vSXj2i8QZ43Wn8LQglA) -->
+<div class="bg-white rounded-2xl overflow-hidden border border-outline-variant shadow-elevated hover:shadow-premium transition-all duration-300 flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Loving retired senior Indian couple smiling on terrace garden" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WMdILEPFlUwwZaDDmsUQloqNlz3TDRHx6EWbKBVhzz2Wsq8L_bgxCX5YMOkTCPgQGMPTJWQKZAKLvdVul-QHI1OS4LoKe4aSbCISUsNnSXfaDlxvYgxIpLE3TNfymn2qWUv4sjsZYd0RD2Wz-BdXYLGnliD7-0b_cVrOoRH0R4OwCLy4R0_C1GTWcT5UD_WmJ9akPLF7i1z9I3hG0J7I9Auq8SkTE11znu-FWt8vSXj2i8QZ43Wn8LQglA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-accent-gold font-headline text-xs font-bold border border-outline-variant">
+              Ages 55 to 85+
+            </span>
+<span class="absolute bottom-3 left-4 text-xs font-headline font-medium text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary-container" data-icon="medical_services">medical_services</span> Pre-Existing Cover from Day 90
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-headline font-bold text-xl text-primary">Golden Years Dignity Plan</h3>
+<span class="text-xs font-headline font-semibold text-accent-gold px-2.5 py-1 rounded bg-accent-gold-light">₹15L – ₹50L</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Dignified senior care covering hypertension, diabetes, and joint replacements with home nursing and concierge assistance.
+              </p>
+<ul class="mt-5 space-y-2.5 text-xs text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Home nursing &amp; physiotherapy rehab post discharge</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>AYUSH &amp; holistic alternative therapy coverage</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Dedicated Geriatric Health Concierge on direct dial</span>
+</li>
+</ul>
+</div>
+<div class="pt-5 border-t border-outline-variant flex items-center justify-between">
+<div>
+<span class="text-[11px] text-on-surface-variant uppercase font-headline font-medium">Starts at</span>
+<div class="font-headline font-bold text-2xl text-primary">₹1,299 <span class="text-xs font-normal text-on-surface-variant">/ month</span></div>
+</div>
+<button class="bg-surface-dim hover:bg-primary hover:text-white text-primary font-headline text-xs font-bold px-4 py-2.5 rounded-lg border border-outline-variant transition-all flex items-center gap-1" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LIVED EXPERIENCES & DOCTOR ENDORSEMENTS: Trust & Warmth -->
+<section class="py-20 bg-white border-b border-outline-variant" id="stories">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-headline font-bold text-secondary tracking-widest uppercase block mb-1">
+          GENUINE HUMAN EXPERIENCES
+        </span>
+<h2 class="font-display font-semibold text-3xl sm:text-4xl text-primary">
+          When Kindness Met Critical Moments.
+        </h2>
+<p class="text-on-surface-variant text-base mt-2 font-body">
+          Read real stories from families and senior physicians who experienced the ArogyaTrust standard during hospital emergencies.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Story 1 -->
+<div class="bg-surface-dim/70 p-8 rounded-2xl border border-outline-variant flex flex-col justify-between space-y-6 shadow-subtle hover:shadow-elevated transition-shadow">
+<div class="space-y-4">
+<div class="flex items-center gap-1 text-accent-gold">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+</div>
+<p class="text-sm text-on-surface leading-relaxed italic">
+              "At 2 AM when my father needed emergency care, our ArogyaTrust care coordinator stayed on the phone with us until he was admitted. That warmth is unforgettable."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant">
+<div class="w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center font-headline text-sm">
+              RK
+            </div>
+<div>
+<p class="text-sm font-bold text-primary">Rohan K.</p>
+<p class="text-xs text-on-surface-variant">Pune</p>
+</div>
+</div>
+</div>
+<!-- Story 2: Physician Perspective -->
+<div class="bg-secondary-container/40 p-8 rounded-2xl border border-secondary/30 flex flex-col justify-between space-y-6 relative shadow-elevated">
+<div class="absolute -top-3 right-6 bg-secondary text-white font-headline text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+            Caregiver Perspective
+          </div>
+<div class="space-y-4">
+<div class="flex items-center gap-1 text-accent-gold">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+</div>
+<p class="text-sm text-primary leading-relaxed italic font-medium">
+              "Looking after my parents, I spend a lot of time on paperwork. Having one person who already knew our history made every conversation calmer and quicker."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-secondary/20">
+<div class="w-10 h-10 rounded-full bg-secondary text-white font-bold flex items-center justify-center font-headline text-sm">
+              MS
+            </div>
+<div>
+<p class="text-sm font-bold text-primary">Meera S.</p>
+<p class="text-xs text-on-surface-variant">Chennai</p>
+</div>
+</div>
+</div>
+<!-- Story 3 -->
+<div class="bg-surface-dim/70 p-8 rounded-2xl border border-outline-variant flex flex-col justify-between space-y-6 shadow-subtle hover:shadow-elevated transition-shadow">
+<div class="space-y-4">
+<div class="flex items-center gap-1 text-accent-gold">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+</div>
+<p class="text-sm text-on-surface leading-relaxed italic">
+              "Switching my mother to their Golden Years plan was the best decision. Her routine arthritis therapy and home nurse sessions were approved with a simple WhatsApp message to our personal counselor. Absolute peace of mind."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant">
+<div class="w-10 h-10 rounded-full bg-accent-gold text-white font-bold flex items-center justify-center font-headline text-sm">
+              AS
+            </div>
+<div>
+<p class="text-sm font-bold text-primary">Arjun S.</p>
+<p class="text-xs text-on-surface-variant">Kolkata</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CASHLESS HOSPITAL NETWORK LOCATOR -->
+<section class="py-20 bg-background border-b border-outline-variant" id="network">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="bg-white rounded-3xl p-8 lg:p-12 border border-outline-variant shadow-premium relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-secondary-container text-on-secondary-container font-headline text-xs font-bold border border-secondary/20">
+<span class="material-symbols-outlined text-sm" data-icon="local_hospital">local_hospital</span>
+<span>HOSPITAL NETWORK — COMING SOON</span>
+</div>
+<h2 class="font-display font-semibold text-3xl sm:text-4xl text-primary">
+              Find Cashless Care Near You In Seconds.
+            </h2>
+<p class="text-on-surface-variant text-base leading-relaxed max-w-xl font-body">
+              We are building our partner hospital network. The hospital locator will be available when ArogyaTrust launches.
+            </p>
+<div class="flex flex-wrap gap-2.5 pt-2">
+<span class="px-3 py-1.5 rounded-lg bg-surface-dim text-xs font-medium text-primary border border-outline-variant">Tier 1 &amp; Tier 2 Metro Coverage</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-dim text-xs font-medium text-primary border border-outline-variant">Bedside Liaison Available</span>
+</div>
+</div>
+<!-- Interactive Search Box -->
+<div class="lg:col-span-5 bg-surface-dim p-6 rounded-2xl border border-outline-variant space-y-4 shadow-subtle">
+<label class="text-xs font-headline text-primary uppercase font-bold block">Locate Your Nearest Network Facility</label>
+<div class="space-y-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3 text-on-surface-variant text-xl" data-icon="location_on">location_on</span>
+<input class="w-full bg-white border border-outline rounded-xl pl-11 pr-4 py-2.5 text-sm text-primary placeholder:text-on-surface-variant/70 focus:border-secondary focus:ring-1 focus:ring-secondary font-medium" placeholder="Enter City or PIN code (e.g. 400001, Mumbai)" type="text"/>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3 text-on-surface-variant text-xl" data-icon="domain">domain</span>
+<select class="w-full bg-white border border-outline rounded-xl pl-11 pr-4 py-2.5 text-sm text-primary font-medium focus:border-secondary focus:ring-1 focus:ring-secondary">
+<option selected="">All Hospital Chains &amp; Specialty Centers</option>
+<option>Multi-Speciality Hospitals Only</option>
+<option>Cardiac &amp; Critical Care Hubs</option>
+<option>Maternity &amp; Pediatric Care Hubs</option>
+</select>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-white font-headline text-sm font-bold py-3 px-6 rounded-xl shadow-sm hover:shadow transition-all active:scale-95 flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-lg" data-icon="search">search</span>
+<span>Find Cashless Hospitals</span>
+</button>
+</div>
+<p class="text-[11px] text-center text-on-surface-variant">
+              Hospital search opens at launch.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TRUSTED EXECUTIVE FOOTER -->
+<footer class="bg-primary text-white pt-16 pb-12" id="about">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Top Grid: Fiduciary Information -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+<!-- Brand & Mission (2 cols) -->
+<div class="lg:col-span-2 space-y-4">
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-10 h-10 rounded-xl overflow-hidden shadow-sm border border-white/20 bg-primary">
+<img alt="ArogyaTrust Logo" class="w-full h-full object-cover" src="logo-icon.png"/>
+</div>
+<span class="font-headline font-extrabold text-2xl tracking-tight text-white">
+              Arogya<span class="text-emerald-400">Trust</span>
+</span>
+</a>
+<p class="text-xs text-white/70 leading-relaxed max-w-sm">
+            A health protection platform designed to return dignity, empathy, and personal human advocacy to medical insurance.
+          </p>
+<div class="pt-2 text-xs space-y-2 text-white/80">
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-sm" data-icon="mail">mail</span>
+<span>Contact: <strong class="text-white">care@arogyatrust.in</strong></span>
+</p>
+</div>
+</div>
+<!-- Col 2: Health Plans -->
+<div class="space-y-3">
+<p class="font-headline font-bold text-xs text-white uppercase tracking-wider">Health Plans</p>
+<ul class="space-y-2 text-xs text-white/70">
+<li><a class="hover:text-white transition-colors" href="#plans">Individual Pro Care</a></li>
+<li><a class="hover:text-white transition-colors" href="#plans">Family Complete Suraksha</a></li>
+<li><a class="hover:text-white transition-colors" href="#plans">Golden Years Senior Plan</a></li>
+<li><a class="hover:text-white transition-colors" href="#plans">Critical Illness Shield</a></li>
+<li><a class="hover:text-white transition-colors" href="#plans">Maternity &amp; Newborn Care</a></li>
+</ul>
+</div>
+<!-- Col 3: Care Services -->
+<div class="space-y-3">
+<p class="font-headline font-bold text-xs text-white uppercase tracking-wider">Care &amp; Claims</p>
+<ul class="space-y-2 text-xs text-white/70">
+<li><a class="hover:text-white transition-colors" href="#concierge">Family Doctor Concierge</a></li>
+<li><a class="hover:text-white transition-colors" href="coming-soon.html?feature=hospitals">Cashless Hospital Network</a></li>
+<li><a class="hover:text-white transition-colors" href="#">15-Min Claim Tracking</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Download Digital Card</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Policy Renewal Desk</a></li>
+</ul>
+</div>
+<!-- Col 4: Fiduciary & Trust -->
+<div class="space-y-3">
+<p class="font-headline font-bold text-xs text-white uppercase tracking-wider">About</p>
+<ul class="space-y-2 text-xs text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">Privacy &amp; Data Ethics</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms &amp; Fiduciary Charter</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-white/60 gap-4">
+<p>© 2026 ArogyaTrust. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<!-- Universal Button & CTA Interceptor for Seamless Navigation -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Calculator Form submission
+    var calcForm = document.querySelector('#quote-calculator button');
+    if (calcForm) {
+      calcForm.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'coming-soon.html?action=calculate';
+      });
+    }
+
+    // Intercept buttons to route to coming-soon.html
+    var buttons = document.querySelectorAll('button');
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        var text = (btn.innerText || '').toLowerCase();
+        var target = 'quote';
+        if (text.indexOf('hospital') !== -1 || text.indexOf('cashless') !== -1 || text.indexOf('network') !== -1) {
+          target = 'hospitals';
+        } else if (text.indexOf('family') !== -1 || text.indexOf('protect') !== -1) {
+          target = 'family';
+        } else if (text.indexOf('rate') !== -1 || text.indexOf('calculate') !== -1 || text.indexOf('premium') !== -1) {
+          target = 'calculate';
+        } else if (text.indexOf('detail') !== -1) {
+          target = 'plans';
+        }
+        window.location.href = 'coming-soon.html?feature=' + encodeURIComponent(target);
+      });
+    });
+  });
+</script>
+</body>
+</html>

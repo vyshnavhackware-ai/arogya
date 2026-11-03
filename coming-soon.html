@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Coming Soon | ArogyaTrust</title>
+  
+  <!-- Favicons & App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <meta name="theme-color" content="#001027"/>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#001027",
+            "primary-container": "#0B2546",
+            secondary: "#006A61",
+            "secondary-fixed": "#89F5E7",
+            "secondary-container": "#86F2E4",
+            "on-secondary-container": "#006F66",
+            surface: "#F8F9FF",
+            "surface-dim": "#CBDBF5",
+            "surface-container": "#E5EEFF",
+            "surface-container-high": "#DCE9FF",
+            "surface-container-low": "#EFF4FF",
+            "surface-container-lowest": "#FFFFFF",
+            "on-surface": "#0B1C30",
+            "on-surface-variant": "#44474E",
+            outline: "#74777F",
+            "outline-variant": "#C4C6CF",
+            "tertiary-fixed": "#FFDDB8",
+            "tertiary-fixed-dim": "#FFB95F",
+            "tertiary-container": "#372000",
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            display: ["Playfair Display", "Georgia", "serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .radial-gradient-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(13, 148, 136, 0.22) 0%, rgba(11, 37, 70, 0.8) 45%, #001027 85%);
+    }
+  </style>
+</head>
+<body class="bg-primary text-slate-100 antialiased selection:bg-secondary-fixed selection:text-primary min-h-screen flex flex-col justify-between">
+
+  <!-- TOP HEADER -->
+  <header class="sticky top-0 z-50 bg-primary/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-3 group" href="index.html">
+        <div class="w-11 h-11 rounded-xl overflow-hidden border border-secondary-fixed/50 flex items-center justify-center bg-primary shadow-md group-hover:border-secondary-fixed transition-colors">
+          <img src="logo-icon.png" alt="ArogyaTrust Logo" class="w-full h-full object-cover"/>
+        </div>
+        <div class="flex flex-col">
+          <span class="leading-none text-white font-bold text-xl tracking-tight">Arogya<span class="text-secondary-fixed">Trust</span></span>
+          <span class="text-[10px] tracking-wider text-secondary-fixed/90 font-semibold mt-1">arogyatrust.in</span>
+        </div>
+      </a>
+
+      <!-- Navigation Actions -->
+      <div class="flex items-center gap-4">
+        <a class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full border border-white/10 font-medium" href="index.html">
+          <span class="material-symbols-outlined text-base">arrow_back</span>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN COMING SOON CONTENT -->
+  <main class="relative radial-gradient-bg py-16 lg:py-24 px-6 lg:px-12 flex-1 flex items-center">
+    <!-- Ambient Blur Circles -->
+    <div class="absolute top-1/4 left-1/10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/10 w-96 h-96 bg-tertiary-fixed-dim/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10 w-full space-y-10">
+      
+
+
+      <!-- Main Headline -->
+      <div class="space-y-4 max-w-2xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+          ArogyaTrust Is <span class="text-secondary-fixed">Coming Soon.</span>
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+          We are getting ready. Simple plans, real people to talk to, and personal health guidance.
+        </p>
+      </div>
+
+      <!-- Early Access Prompt -->
+      <div class="pt-2"></div>
+
+      <!-- LAUNCHING SOON CARD -->
+      <div class="bg-primary-container/90 backdrop-blur-xl rounded-3xl p-6 sm:p-10 border border-white/15 shadow-2xl max-w-2xl mx-auto text-center relative overflow-hidden">
+        <div class="absolute -top-12 -right-12 w-48 h-48 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="w-12 h-12 rounded-xl bg-secondary/20 text-secondary-fixed flex items-center justify-center mx-auto mb-4">
+          <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white">Launching Soon</h2>
+        <p class="text-sm text-slate-300 mt-2">This feature is not available yet. Please check back later.</p>
+        <div class="pt-6">
+          <a href="index.html" class="inline-flex items-center gap-2 text-sm text-secondary-fixed hover:text-white font-semibold transition-colors">
+            <span class="material-symbols-outlined text-base">arrow_back</span>
+            <span>Back to Home</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 PERKS FOR EARLY REGISTERED USERS -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left pt-4">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-secondary-fixed/40 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-secondary/20 text-secondary-fixed flex items-center justify-center mb-3">
+            <span class="material-symbols-outlined">percent</span>
+          </div>
+          <h4 class="font-bold text-white text-base">Clear, Simple Plans</h4>
+          <p class="text-xs text-slate-400 mt-1">Coverage explained in plain language, without fine-print surprises.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-secondary-fixed/40 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-secondary/20 text-secondary-fixed flex items-center justify-center mb-3">
+            <span class="material-symbols-outlined">support_agent</span>
+          </div>
+          <h4 class="font-bold text-white text-base">Dedicated Care Concierge</h4>
+          <p class="text-xs text-slate-400 mt-1">A real person to guide your family through every step.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-secondary-fixed/40 transition-colors">
+          <div class="w-10 h-10 rounded-xl bg-secondary/20 text-secondary-fixed flex items-center justify-center mb-3">
+            <span class="material-symbols-outlined">flash_on</span>
+          </div>
+          <h4 class="font-bold text-white text-base">Faster Help</h4>
+          <p class="text-xs text-slate-400 mt-1">Less paperwork and quicker answers when you need care.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary border-t border-white/10 py-8 text-center text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <img src="logo-icon.png" alt="ArogyaTrust Logo" class="w-5 h-5 rounded object-cover"/>
+        <span>© 2026 ArogyaTrust. All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="index.html#plans" class="hover:text-white transition-colors">Plans</a>
+        <a href="index.html#cashless-network" class="hover:text-white transition-colors">Hospitals</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

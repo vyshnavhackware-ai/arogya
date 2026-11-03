@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" fill="none">
+  <defs>
+    <linearGradient id="shieldGradLogo" x1="15" y1="10" x2="65" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#006A61"/>
+      <stop offset="50%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+    <linearGradient id="shieldBorderLogo" x1="10" y1="5" x2="70" y2="75" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="80%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="90" y1="20" x2="260" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="tealAccentGrad" x1="200" y1="20" x2="310" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+    <filter id="glowLogo" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Shield Emblem Group (Offset at x=8, y=8) -->
+  <g transform="translate(8, 8)">
+    <!-- Base Glow -->
+    <path d="M32 6 L54 14 C54 36 44 54 32 62 C20 54 10 36 10 14 Z" fill="url(#shieldGradLogo)" filter="url(#glowLogo)" opacity="0.4"/>
+    <!-- Outer Shield -->
+    <path d="M32 6 L54 14 C54 36 44 54 32 62 C20 54 10 36 10 14 Z" fill="url(#shieldGradLogo)" stroke="url(#shieldBorderLogo)" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Gold Inset -->
+    <path d="M32 10 L50 17 C50 34 41 50 32 57 C23 50 14 34 14 17 Z" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.75" stroke-linejoin="round"/>
+    <!-- Heart outline -->
+    <path d="M32 24 C29 19 21 18 18 24 C14 30 20 38 32 47 C44 38 50 30 46 24 C43 18 35 19 32 24 Z" fill="none" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Medical Cross -->
+    <rect x="27" y="28" width="18" height="5" rx="2.5" fill="#FFFFFF"/>
+    <rect x="33.5" y="21.5" width="5" height="18" rx="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="84" y="42" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="28" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5">
+    Arogya<tspan fill="url(#tealAccentGrad)">Trust</tspan>
+  </text>
+  
+  <!-- Sub-caption -->
+  <text x="85" y="60" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#2DD4BF" letter-spacing="1.2">
+    arogyatrust.in | India's #1 Health Insurance
+  </text>
+</svg>

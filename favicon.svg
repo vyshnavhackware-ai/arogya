@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="15" y1="10" x2="85" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#006A61"/>
+      <stop offset="50%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+    <linearGradient id="shieldBorder" x1="10" y1="5" x2="90" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="80%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="crossHeart" x1="25" y1="20" x2="75" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#99F6E4"/>
+      <stop offset="50%" stop-color="#2DD4BF"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base (for rounded favicon visibility) -->
+  <rect width="100" height="100" rx="22" fill="#001027"/>
+
+  <!-- Outer Shield Shadow/Glow -->
+  <path d="M50 12 L82 23 C82 52 68 76 50 88 C32 76 18 52 18 23 Z" fill="url(#shieldGrad)" filter="url(#glow)" opacity="0.3"/>
+
+  <!-- Outer Shield Outline & Fill -->
+  <path d="M50 12 L82 23 C82 52 68 76 50 88 C32 76 18 52 18 23 Z" fill="url(#shieldGrad)" stroke="url(#shieldBorder)" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Inner Gold Accent Line -->
+  <path d="M50 18 L76 27 C76 50 64 71 50 81 C36 71 24 50 24 27 Z" fill="none" stroke="#F59E0B" stroke-width="1.2" opacity="0.75" stroke-linejoin="round"/>
+
+  <!-- Heart Shape -->
+  <path d="M50 38 C46 31 34 30 30 38 C25 47 34 58 50 71 C66 58 75 47 70 38 C66 30 54 31 50 38 Z" fill="none" stroke="url(#crossHeart)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Medical Cross Intertwined -->
+  <!-- Horizontal bar -->
+  <rect x="42" y="44" width="26" height="7" rx="3.5" fill="#FFFFFF"/>
+  <!-- Vertical bar -->
+  <rect x="51.5" y="34.5" width="7" height="26" rx="3.5" fill="#FFFFFF"/>
+</svg>
